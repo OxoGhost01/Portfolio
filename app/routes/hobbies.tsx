@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 export default function Hobbies() {
+    useEffect(() => {
+        document.title = "Hobbies - OxoGhost";
+    })
 return (
 <section className="flex flex-col h-full animate-fadeIn">
     <h2 className="text-3xl font-bold">My Hobbies</h2>
@@ -16,8 +21,8 @@ return (
             <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
                 <h3 className="font-semibold text-xl mb-2">Simracing & Drift</h3>
                 <p className="text-gray-300">
-                    I spend way too much time tuning setups, practicing drift lines, and trying to master
-                    technical tracks. The Mazda RX-7 will forever be my dream machine.
+                    I spend way too much time on Assetto Corsa Competizione trying to get a better time, or on Carx Street, practicing drift with the Rx-7,
+                    my beloved car.
                 </p>
             </div>
 
@@ -25,16 +30,15 @@ return (
             <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
                 <h3 className="font-semibold text-xl mb-2">Rubik's Cubes</h3>
                 <p className="text-gray-300">
-                    I enjoy speedsolving, optimizing my algorithms, and collecting unique cube models.
+                    I enjoy speedsolving, learning new ways to solves cubes, and collecting unique cube models.
                 </p>
             </div>
 
 
             <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
-                <h3 className="font-semibold text-xl mb-2">Linux & System Tweaks</h3>
+                <h3 className="font-semibold text-xl mb-2">Coding</h3>
                 <p className="text-gray-300">
-                    I customize workflows, automate everything I can, and experiment with different distros
-                    and window managers.
+                    I love coding, trying to code new things, and learning new languages, new tools, new ways to do something.
                 </p>
             </div>
 
@@ -44,6 +48,18 @@ return (
                 <p className="text-gray-300">
                     Nothing beats designing absurdly efficient production chains and optimizing systems
                     until they break.
+                </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
+                <h3 className="font-semibold text-xl mb-2">Cycling</h3>
+                <p className="text-gray-300">
+                    I do like to bike with my friend, go fullspeed in the downhill, and have a lot of fun.
+                </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
+                <h3 className="font-semibold text-xl mb-2">Music</h3>
+                <p className="text-gray-300">
+                    I live in music, listening to it all day long. I'm also a musician, i've been playing percussions for 13 years.
                 </p>
             </div>
         </div>

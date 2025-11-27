@@ -4,32 +4,11 @@ export default function Home() {
 const sectionRef = useRef<HTMLElement>(null);
 
 useEffect(() => {
-    const section = sectionRef.current;
-    const glass = document.querySelector<HTMLDivElement>(".glass-card");
-    const header = document.querySelector<HTMLElement>(".glass-card header");
-    
-    if (!section || !glass || !header) return;
-
-    // Wait for layout to complete
-    requestAnimationFrame(() => {
-    // Measure the actual rendered heights
-    const headerHeight = header.offsetHeight;
-    const headerMargin = 24; // mb-6 = 24px
-    const sectionHeight = section.offsetHeight;
-    const glassCardPaddingY = 48; // p-6 = 24px top + 24px bottom
-    
-    // Total card height = padding + header + margin + content
-    const totalCardHeight = glassCardPaddingY + headerHeight + headerMargin + sectionHeight;
-    
-    document.documentElement.style.setProperty("--home-reference-height", `${totalCardHeight}px`);
-    window.dispatchEvent(new CustomEvent("home-height-ready", { detail: `${totalCardHeight}px` }));
-    
-    glass.style.setProperty("--card-header-height", `${headerHeight + headerMargin}px`);
-    });
+    document.title = "Home - OxoGhost"; 
 }, []);
 
 return (
-    <section ref={sectionRef} className="space-y-8 animate-fadeIn pb-6">
+    <section ref={sectionRef} className="space-y-8 animate-fadeIn">
     <h2 className="text-2xl font-bold">
         Arlen Ghost — CS Student & Machine Learning Enthusiast
     </h2>
@@ -41,7 +20,7 @@ return (
         🤖 Today, I love building smart tools, experimenting with ML models, and
         working on high-performance backend systems.<br /><br />
         🎯 My current ambition: launching a YouTube channel where I develop an AI
-        that plays better than me ↪ whether in simracing, drift challenges, or
+        that plays better than me <br /> ↪ either in simple games, like Trackmania or
         complex factory games.
     </p>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
