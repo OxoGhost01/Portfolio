@@ -20,8 +20,7 @@ return (
         🤖 Today, I love building smart tools, experimenting with ML models, and
         working on high-performance backend systems.<br /><br />
         🎯 My current ambition: launching a YouTube channel where I develop an AI
-        that plays better than me <br /> ↪ either in simple games, like Trackmania or
-        complex factory games.
+        that plays better than me on every kind of games.
     </p>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
         <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
@@ -36,8 +35,7 @@ return (
         <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
         <h3 className="font-semibold text-xl mb-2">💻 Currently Working On</h3>
         <p className="text-gray-300">
-            Training small ML agents to learn how to drive, drift, and make
-            decisions in simulated environments.
+            Developping an AI that learns to drive in Trackmania Nation Forever with DRL
         </p>
         </div>
     </div>

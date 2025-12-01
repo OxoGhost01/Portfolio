@@ -6,51 +6,9 @@ Outlet,
 Scripts,
 ScrollRestoration,
 } from "react-router";
-import { useEffect, useRef } from "react";
-import { useLocation } from "react-router";
 import "./app.css";
 
 export function Layout() {
-const glassRef = useRef<HTMLDivElement | null>(null);
-const location = useLocation();
-const isHome = location.pathname === '/';
-
-useEffect(() => {
-    const glass = glassRef.current;
-    if (!glass) return;
-
-    const computeHeight = () => {
-        if (location.pathname === "/") {
-        // HOME — natural height first
-        glass.style.height = "auto";
-        glass.style.maxHeight = "none";
-
-        requestAnimationFrame(() => {
-            const height = glass.offsetHeight;
-            const stored = `${height}px`;
-
-            glass.style.height = stored;
-            localStorage.setItem("glass-height", stored);
-        });
-
-        } else {
-        // OTHER PAGES — fixed height
-        const saved = localStorage.getItem("glass-height");
-        if (saved) {
-            glass.style.height = saved;
-            glass.style.maxHeight = saved;
-        }
-        }
-    };
-
-    // compute AFTER mount
-    requestAnimationFrame(computeHeight);
-
-    // recompute on window resize
-    window.addEventListener("resize", computeHeight);
-    return () => window.removeEventListener("resize", computeHeight);
-}, [location.pathname]);
-
 const Starfield = () => {
     const stars = Array.from({ length: 800 }, (_, i) => ({
         id: i,
@@ -190,6 +148,7 @@ return (
     <html lang="en" className="h-full">
     <head>
         <meta charSet="utf-8" />
+        <link rel = "icon" href = "/app/assets/profile_icon.jpg" />
         <Meta />
         <Links />
     </head>
@@ -200,8 +159,7 @@ return (
         <ShootingStars />
 
         <div
-        ref={glassRef}
-        className="glass-card w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-6 flex flex-col"
+        className="glass-card w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-6 flex flex-col h-[750px] max-h-[850px]"
         >
         {/* Header */}
         <header className="flex items-center justify-between mb-6 flex-shrink-0">
@@ -214,9 +172,9 @@ return (
             <h1 className="text-3xl font-semibold">Arlen Ghost</h1>
             </Link>
             <nav className="flex gap-6 text-lg">
-            <a href="/" className="hover:text-gray-300 transition">Home</a>
-            <a href="/projects" className="hover:text-gray-300 transition">Projects</a>
-            <a href="/hobbies" className="hover:text-gray-300 transition">Hobbies</a>
+            <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+            <Link to="/projects" className="hover:text-gray-300 transition">Projects</Link>
+            <Link to="/about" className="hover:text-gray-300 transition">About</Link>
             </nav>
         </header>
 
