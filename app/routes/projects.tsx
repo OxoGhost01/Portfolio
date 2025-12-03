@@ -17,127 +17,172 @@ import { useEffect } from "react";
         <div className="flex-1 min-h-0 overflow-y-auto pr-2 -mr-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
 
-                {/* ---- CARDS ---- */}
-
+                {/* TEMPLATE for all cards */}
                 {/* Project 1 */}
                 <a
-                href="https://github.com/OxoGhost01/TrackmanAI"
-                target="_blank"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/TrackmanAI"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">TrackmanAI</h3>
-                <p className="text-gray-300">
-                    An DRL agent that learns to drive in tmnf.
-                </p>
+                    {/* LEFT SQUARE */}
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    {/* RIGHT CONTENT */}
+                    <div className="p-4 flex flex-col justify-center items-start">
+                        <h3 className="font-semibold text-xl mb-1">TrackmanAI</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            A DRL agent that learns to drive in TMNF.
+                        </p>
+
+                        {/* TAG */}
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Python
+                            </span>
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                AngelScript
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 2 */}
                 <a
-                href="https://github.com/OxoGhost01/Hokito_python"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/Hokito_python"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">
-                    Hokito game in python
-                </h3>
-                <p className="text-gray-300">
-                    A little game of Hokito made in python with pygame. You can play solo against the computer, or with a friend (local).
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Hokito game in Python</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            A Hokito game made with pygame — solo or local multiplayer.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Python
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 3 */}
                 <a
-                href="https://github.com/OxoGhost01/Clone_YTS_But_Strange"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/Clone_YTS_But_Strange"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">
-                    Little streaming website
-                </h3>
-                <p className="text-gray-300">
-                    First full website with backend and frontend.
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Little streaming website</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            My first full stack website with both backend and frontend.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                JavaScript
+                            </span>
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                TypeScript
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 4 */}
                 <a
-                href="https://github.com/OxoGhost01/Checkers-Game-in-Python"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/Checkers-Game-in-Python"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">Checkers game in python</h3>
-                <p className="text-gray-300">
-                    A little game of checkers made in python with pygame, all rules implemented.
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Checkers game in Python</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            A full checkers game with pygame. All rules included.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Python
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 5 */}
                 <a
-                href="https://github.com/OxoGhost01/Tic-Tac-Toe-in-C"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/Tic-Tac-Toe-in-C"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">Tic Tac Toe game in C</h3>
-                <p className="text-gray-300">
-                    Simple tic tac toe game in C, in the terminal.
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Tic Tac Toe in C</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Simple terminal tic tac toe game written in C.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 6 */}
                 <a
-                href="https://github.com/OxoGhost01/double_chained_lists"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/double_chained_lists"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">Double Chained Lists in C</h3>
-                <p className="text-gray-300">
-                    Really simple double chained lists in C.
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Double Chained Lists in C</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Simple doubly linked list implementation in C.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                        </div>
+                    </div>
                 </a>
+
 
                 {/* Project 7 */}
                 <a
-                href="https://github.com/OxoGhost01/Chess_in_python"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
+                    href="https://github.com/OxoGhost01/Chess_in_python"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                <h3 className="font-semibold text-xl mb-2">Chess game in python</h3>
-                <p className="text-gray-300">
-                    A little game of chess made in python with pygame, i never finished it because i'm too lazy to implement the check feature.
-                </p>
-                </a>
-                {/* Project 6 */}
-                <a
-                href="https://github.com/OxoGhost01/double_chained_lists"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
-                >
-                <h3 className="font-semibold text-xl mb-2">Double Chained Lists in C</h3>
-                <p className="text-gray-300">
-                    Really simple double chained lists in C.
-                </p>
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Chess in Python</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Unfinished chess game in pygame — too lazy to implement check logic 😄
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Python
+                            </span>
+                        </div>
+                    </div>
                 </a>
 
-                {/* Project 7 */}
-                <a
-                href="https://github.com/OxoGhost01/Chess_in_python"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20 hover:bg-white/20 transition cursor-pointer"
-                >
-                <h3 className="font-semibold text-xl mb-2">Chess game in python</h3>
-                <p className="text-gray-300">
-                    A little game of chess made in python with pygame, i never finished it because i'm too lazy to implement the check feature.
-                </p>
-                </a>
             </div>
+
         </div>
     </div>
     );

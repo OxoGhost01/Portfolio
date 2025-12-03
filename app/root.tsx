@@ -148,11 +148,11 @@ return (
     <html lang="en" className="h-full">
     <head>
         <meta charSet="utf-8" />
-        <link rel = "icon" href = "/app/assets/profile_icon.jpg" />
+        <link rel="icon" href="/tab_icon.png" />
         <Meta />
         <Links />
     </head>
-    <body className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center p-6">
+    <body className="min-h-screen bg-[#0a0a0a] text-white flex flex-col items-center justify-center p-6">
 
         <Starfield />
         <Nebula />
@@ -165,7 +165,7 @@ return (
         <header className="flex items-center justify-between mb-6 flex-shrink-0">
             <Link to="/" className="flex items-center gap-3">
             <img
-                src="/app/assets/profile_icon.jpg"
+                src="/profile.png"
                 alt="Profile"
                 className="w-16 h-16 rounded-full bg-white/20 object-cover"
             />
@@ -175,6 +175,7 @@ return (
             <Link to="/" className="hover:text-gray-300 transition">Home</Link>
             <Link to="/projects" className="hover:text-gray-300 transition">Projects</Link>
             <Link to="/about" className="hover:text-gray-300 transition">About</Link>
+            <Link to="/contact" className="hover:text-gray-300 transition">Contact</Link>
             </nav>
         </header>
 
@@ -186,6 +187,11 @@ return (
         <ScrollRestoration />
         <Scripts />
     </body>
+    <footer className="w-full text-center absolute bottom-2">
+            <p className="text-sm text-gray-400">
+            &copy; 2025-{new Date().getFullYear()} <Link to="/">OxoGhost</Link>. All rights reserved.
+            </p>
+    </footer>
     </html>
 );
 }

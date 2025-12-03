@@ -5,6 +5,7 @@ export default [
     index("routes/home.tsx"),
     route("hobbies", "routes/hobbies.tsx"),
     route("about", "routes/about.tsx"),
+    route("contact", "routes/contact.tsx"),
     route("projects", "routes/projects.tsx"),
     route("projects/TrackmanAI", "routes/projects/trackmanai.tsx"),
 

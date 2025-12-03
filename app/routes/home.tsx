@@ -1,44 +1,69 @@
-import { useEffect, useRef } from "react";
+import { Link } from "react-router";
+import { useEffect } from "react";
 
 export default function Home() {
-const sectionRef = useRef<HTMLElement>(null);
+    useEffect(() => {
+        document.title = "Home - OxoGhost";
+    }, []);
 
-useEffect(() => {
-    document.title = "Home - OxoGhost"; 
-}, []);
+    return (
+        <section className="flex flex-col items-center text-center space-y-10 animate-fadeIn h-full justify-center">
 
-return (
-    <section ref={sectionRef} className="space-y-8 animate-fadeIn">
-    <h2 className="text-2xl font-bold">
-        Arlen Ghost — CS Student & Machine Learning Enthusiast
-    </h2>
-    <p className="text-lg text-gray-200 leading-relaxed">
-        📌 I'm a computer science student based in Paris, passionate about
-        Machine Learning and systems programming.<br /><br />
-        📱 I grew up modding and jailbreaking iPhones, customizing everything I
-        touched — naturally leading me toward development.<br /><br />
-        🤖 Today, I love building smart tools, experimenting with ML models, and
-        working on high-performance backend systems.<br /><br />
-        🎯 My current ambition: launching a YouTube channel where I develop an AI
-        that plays better than me on every kind of games.
-    </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
-        <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
-        <h3 className="font-semibold text-xl mb-2">🔥 What I Like</h3>
-        <ul className="text-gray-300 space-y-1">
-            <li>• Linux tweaking & automation</li>
-            <li>• Simracing & drift (Mazda Rx-7 ❤️)</li>
-            <li>• Rubik's cubes</li>
-            <li>• Factory-style video games</li>
-        </ul>
-        </div>
-        <div className="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/20">
-        <h3 className="font-semibold text-xl mb-2">💻 Currently Working On</h3>
-        <p className="text-gray-300">
-            Developping an AI that learns to drive in Trackmania Nation Forever with DRL
-        </p>
-        </div>
-    </div>
-    </section>
-);
+            {/* Bigger Profile Picture */}
+            <img
+                src="/profile.png"
+                alt="Profile"
+                className="w-80 h-80 rounded-full object-cover shadow-2xl border border-white/30"
+            />
+
+            {/* Name + Title */}
+            <div className="flex flex-col space-y-1">
+                <h2 className="text-5xl font-bold">Arlen Ghost</h2>
+                <p className="text-2xl text-gray-300">CS Student & ML Enthusiast</p>
+            </div>
+
+            {/* Wider Buttons (single-line text + glow) */}
+            <div className="flex flex-col sm:flex-row gap-6 mt-6 w-full max-w-2xl"> 
+                <Link
+                    to="/projects"
+                    className="flex-1 
+                        bg-gradient-to-br from-purple-600/30 to-pink-600/30 
+                        backdrop-blur-xl 
+                        border border-white/20 
+                        py-3 px-6 rounded-xl text-xl font-medium text-nowrap
+                        hover:from-purple-500/50 hover:to-pink-500/50 
+                        transition shadow-[0_0_20px_rgba(255,0,255,0.2)] hover:shadow-[0_0_25px_rgba(255,0,255,0.4)]"
+                >
+                    🚀 My Projects
+                </Link>
+
+                <Link
+                    to="/about"
+                    className="flex-1 
+                        bg-gradient-to-br from-purple-600/30 to-pink-600/30 
+                        backdrop-blur-xl 
+                        border border-white/20 
+                        py-3 px-6 rounded-xl text-xl font-medium text-nowrap
+                        hover:from-purple-500/50 hover:to-pink-500/50 
+                        transition shadow-[0_0_20px_rgba(255,0,255,0.2)] hover:shadow-[0_0_25px_rgba(255,0,255,0.4)]"
+                >
+                    👤 More About Me
+                </Link>
+
+                <a
+                    href="/ArlenGhost_CV.pdf"
+                    download
+                    className="flex-1 
+                        bg-gradient-to-br from-purple-600/30 to-pink-600/30 
+                        backdrop-blur-xl 
+                        border border-white/20 
+                        py-3 px-6 rounded-xl text-xl font-medium text-nowrap
+                        hover:from-purple-500/50 hover:to-pink-500/50 
+                        transition shadow-[0_0_20px_rgba(255,0,255,0.2)] hover:shadow-[0_0_25px_rgba(255,0,255,0.4)]"
+                >
+                    📄 Download CV
+                </a>
+            </div>
+        </section>
+    );
 }
