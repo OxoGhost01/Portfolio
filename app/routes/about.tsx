@@ -1,12 +1,37 @@
 import { useEffect } from "react";
+import {
+    Code2,
+    Cpu,
+    TerminalSquare,
+    FileCode,
+    Blocks,
+    Globe,
+    Braces,
+    Boxes
+} from "lucide-react";
+
 
 export default function About() {
     useEffect(() => {
         document.title = "About - OxoGhost";
     }, []);
 
+    function Skill({ icon: Icon, name }: { icon: React.ComponentType<any>; name: string }) {
+        return (
+            <span className="
+                flex items-center gap-2 px-3 py-1 rounded-full text-sm 
+                bg-gradient-to-br from-purple-600/30 to-pink-600/30 
+                border border-white/10 
+                shadow-[0_0_10px_rgba(255,0,255,0.25)]
+            ">
+                <Icon className="w-4 h-4" />
+                {name}
+            </span>
+        );
+        }
+
     return (
-        <section className="h-full flex flex-col gap-8 animate-fadeIn">
+        <section className="h-full flex flex-col gap-4 animate-fadeIn">
 
             {/* Header */}
             <div>
@@ -39,11 +64,11 @@ export default function About() {
                         <h3 className="font-semibold text-lg md:text-xl">Background</h3>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
                             I started by customizing and jailbreaking iPhones, then moved to Linux,
-                            scripting and low-level programming. That habit of taking things apart
+                            high and low-level programming. That habit of taking things apart
                             to see how they work naturally led me to computer science.
                         </p>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                            At the moment, I&apos;m studying CS in Paris and exploring the space
+                            At the moment, I'm studying CS in Paris and exploring the space
                             between{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 machine learning
@@ -60,30 +85,51 @@ export default function About() {
                     <div className="bg-white/5 backdrop-blur rounded-2xl border border-white/15 p-4 md:p-5 space-y-3">
                         <h3 className="font-semibold text-lg md:text-xl">What I enjoy working on</h3>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                            I&apos;m particularly interested in:
+                            I'm particularly interested in:
                         </p>
                         <ul className="text-sm md:text-base text-gray-200 space-y-1.5 list-disc list-inside">
-                            <li>Designing small ML agents for control, driving or game environments</li>
-                            <li>Writing clear, efficient code in Python or C</li>
+                            <li>Designing{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                RL agents
+                            </span>{" "}for control, driving or game environments</li>
+                            <li>Learning new ways of doing things, or new tools</li>
                             <li>Understanding how systems behave under stress or constraints</li>
                             <li>Automating repetitive tasks and building tools that solve real problems</li>
+                            <li>Learning how things works under the hood</li>
                         </ul>
                     </div>
 
                     {/* What I'm looking for */}
                     <div className="bg-white/5 backdrop-blur rounded-2xl border border-white/15 p-4 md:p-5 space-y-3">
-                        <h3 className="font-semibold text-lg md:text-xl">What I&apos;m looking for</h3>
+                        <h3 className="font-semibold text-lg md:text-xl">What I'm looking for</h3>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                            I&apos;m looking for opportunities where I can:
+                            I'm looking for opportunities where I can:
                         </p>
                         <ul className="text-sm md:text-base text-gray-200 space-y-1.5 list-disc list-inside">
-                            <li>Contribute to real projects in software engineering or ML</li>
+                            <li>Contribute to real projects in{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                software engineering
+                            </span>{" "},{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                Reinforcement Learning
+                            </span>{" "}or{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                video game
+                            </span>{" "}development</li>
                             <li>Learn from more experienced engineers and strengthen my foundations</li>
-                            <li>Work on problems involving performance, data or complex systems</li>
+                            <li>Work on problems involving{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                performance
+                            </span>{" "}, data or{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                complex systems
+                            </span>{" "}</li>
                         </ul>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                            If you think my profile could match your team or project, feel free to
-                            reach out — I&apos;m always open to learning and collaborating.
+                            If you think my profile could match your team or project, feel free to{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                reach out
+                            </span>{" "}— I'm always open to learning and collaborating.
                         </p>
                     </div>
                 </div>
@@ -95,11 +141,17 @@ export default function About() {
                     <div className="bg-white/5 backdrop-blur rounded-2xl border border-white/15 p-4 md:p-5">
                         <h3 className="font-semibold text-lg mb-2">Skills & tools</h3>
                         <div className="flex flex-wrap gap-2 text-xs text-gray-100">
-                            <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Python</span>
-                            <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">C</span>
-                            <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Linux & CLI</span>
-                            <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Git & GitHub</span>
-                            <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Basic web (HTML/CSS/JS)</span>
+                            <div className="flex flex-wrap gap-2 text-xs text-gray-100">
+                                <Skill icon={Cpu} name="Python" />
+                                <Skill icon={Code2} name="C" />
+                                <Skill icon={Code2} name="C++" />
+                                <Skill icon={Code2} name="C#" />
+                                <Skill icon={Braces} name="AngelScript" />
+                                <Skill icon={Blocks} name="GDScript" />
+                                <Skill icon={Globe} name="HTML/CSS" />
+                                <Skill icon={FileCode} name="JavaScript" />
+                                <Skill icon={FileCode} name="TypeScript" />
+                            </div>
                         </div>
                     </div>
 

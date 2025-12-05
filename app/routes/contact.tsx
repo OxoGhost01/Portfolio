@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
 
                 {/* RIGHT — INFO CARD */}
-                <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl p-6 flex flex-col justify-center">
+                <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center items-center">
                     <h3 className="text-2xl font-semibold mb-4">Contact info</h3>
 
                     <p className="text-gray-200">
