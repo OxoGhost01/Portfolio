@@ -25,7 +25,13 @@ import { useEffect } from "react";
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
                     {/* LEFT SQUARE */}
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/trackmanai.png"
+                            alt="TrackmanAI"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     {/* RIGHT CONTENT */}
                     <div className="p-4 flex flex-col justify-center items-start">
@@ -53,7 +59,13 @@ import { useEffect } from "react";
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/hokito.png"
+                            alt="Hokito"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Hokito game in Python</h3>
@@ -100,7 +112,13 @@ import { useEffect } from "react";
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/dames.png"
+                            alt="Dames"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Checkers game in Python</h3>
@@ -122,7 +140,13 @@ import { useEffect } from "react";
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/tictactoe_c.png"
+                            alt="Tic Tac Toe in C"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Tic Tac Toe in C</h3>
@@ -144,7 +168,13 @@ import { useEffect } from "react";
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/chained_lists.png"
+                            alt="Chained_lists code"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Double Chained Lists in C</h3>
@@ -166,7 +196,13 @@ import { useEffect } from "react";
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/chess.png"
+                            alt="Chess"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Chess in Python</h3>
