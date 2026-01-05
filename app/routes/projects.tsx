@@ -1,8 +1,38 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+function ProjectsLoader() {
+    return (
+        <div className="flex flex-col items-center justify-center h-full gap-4">
+        <div className="relative w-20 h-20">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/50 to-pink-500/50 blur-xl animate-pulse" />
+            <div className="absolute inset-0 rounded-full border border-white/20 backdrop-blur animate-spin-slow" />
+        </div>
+
+        <p className="text-gray-300 text-sm tracking-wide">
+            Loading projects…
+        </p>
+
+        <style>{`
+            @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+            }
+            .animate-spin-slow {
+            animation: spin-slow 3s linear infinite;
+            }
+        `}</style>
+        </div>
+    );
+    }
+
     
     export default function Projects() {
+        const [loading, setLoading] = useState(true);
+
         useEffect(() => {
                 document.title = "Projects - OxoGhost";
+                const t = setTimeout(() => setLoading(false), 800);
+                return () => clearTimeout(t);
             })
     return (
         <div className="h-full flex flex-col min-h-0">
@@ -15,7 +45,10 @@ import { useEffect } from "react";
         </div>
         
         <div className="flex-1 min-h-0 overflow-y-auto pr-2 -mr-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
+            {loading ? (
+            <ProjectsLoader />
+            ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 animate-fadeIn">
 
                 {/* TEMPLATE for all cards */}
                 {/* Project 1 */}
@@ -299,9 +332,8 @@ import { useEffect } from "react";
                         </div>
                     </div>
                 </a>
-
             </div>
-
+            )}
         </div>
     </div>
     );
