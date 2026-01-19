@@ -142,7 +142,7 @@ function ProjectsLoader() {
                 >
                     <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
                         <img
-                            src="/projects/porfolio.png"
+                            src="/projects/portfolio.png"
                             alt="Portfolio"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
