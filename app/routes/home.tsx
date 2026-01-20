@@ -94,7 +94,7 @@ export default function Home() {
 
                         <div className="flex gap-4">
                             <a
-                            href="/ArlenGhost_CV_EN.pdf"
+                            href="/CV-ArlenGhost-en.pdf"
                             download
                             className="
                                 flex-1
@@ -109,7 +109,7 @@ export default function Home() {
                             </a>
 
                             <a
-                            href="/ArlenGhost_CV_FR.pdf"
+                            href="/CV-ArlenGhost-fr.pdf"
                             download
                             className="
                                 flex-1
