@@ -267,8 +267,34 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
+                {/* Project 6 */}
+                <a
+                    href="https://github.com/OxoGhost01/Clash-Not-Royal"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/cnr.png"
+                            alt="CNR"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
-                {/* Project 67 */}
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Clash Not Royal</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Simple game to learn how to use MongoDB
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                {/* Project 6 */}
                 <a
                     href="https://github.com/OxoGhost01/double_chained_lists"
                     target="_blank"
