@@ -126,14 +126,14 @@ function ProjectsLoader() {
                     <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
                         <img
                             src="/projects/hexaplayer.png"
-                            alt="FastQ"
+                            alt="HexaPlayer"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
                     </div>
 
                     {/* RIGHT CONTENT */}
                     <div className="p-4 flex flex-col justify-center items-start">
-                        <h3 className="font-semibold text-xl mb-1">FastQ</h3>
+                        <h3 className="font-semibold text-xl mb-1">HexaPlayer</h3>
                         <p className="text-gray-300 text-sm mb-3">
                             Local music player for Android.
                         </p>
