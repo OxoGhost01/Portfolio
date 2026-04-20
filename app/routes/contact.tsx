@@ -112,8 +112,16 @@ export default function Contact() {
                     <h3 className="text-2xl font-semibold mb-4">Contact info</h3>
 
                     <p className="text-gray-200">
-                        <span className="font-semibold">Real name:</span>  
+                        <span className="font-semibold">Real name:</span>
                         <br /> Timothée Gauchez
+                    </p>
+
+                    <p className="text-gray-200 mt-3">
+                        <span className="font-semibold">Email:</span>
+                        <br />
+                        <a href="mailto:contact@oxoghost.dev" className="hover:text-purple-300 transition">
+                            contact@oxoghost.dev
+                        </a>
                     </p>
 
                     <div className="mt-4">
