@@ -50,8 +50,112 @@ function ProjectsLoader() {
             ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 animate-fadeIn">
 
-                {/* TEMPLATE for all cards */}
-                {/* Project 1 */}
+                <a
+                    href="https://github.com/shinigami-os/kira-base"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    {/* LEFT SQUARE */}
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/kira-linux.png"
+                            alt="kira-linux"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+
+                    {/* RIGHT CONTENT */}
+                    <div className="p-4 flex flex-col justify-center items-start">
+                        <h3 className="font-semibold text-xl mb-1">Kira Linux</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            A Linux distribution you actually understand
+                        </p>
+
+                        {/* TAG */}
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                Makefile
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/shinigami-os/shinigami"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">Shinigami</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Kinux kernel fork powering Kira Linux.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/shinigami-os/flux"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
+
+                    <div className="p-4 flex flex-col justify-center">
+                        <h3 className="font-semibold text-xl mb-1">flux</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Fast, minimal source-based pacjage manager for Kira Linux.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://github.com/OxoGhost01/KIRA"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    {/* LEFT SQUARE */}
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/KIRA.png"
+                            alt="KIRA"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+
+                    {/* RIGHT CONTENT */}
+                    <div className="p-4 flex flex-col justify-center items-start">
+                        <h3 className="font-semibold text-xl mb-1">Kernel In RISC-V Architecture</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            A minimal RISC-V kernel build from scratch to learn how it works.
+                        </p>
+
+                        {/* TAG */}
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                C
+                            </span>
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                asm
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
                 <a
                     href="https://github.com/OxoGhost01/TrackmanAI"
                     target="_blank"
@@ -85,7 +189,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                 {/* Project 2 */}
                 <a
                     href="https://markpoll.oxoghost.dev/"
                     target="_blank"
@@ -116,7 +219,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                 {/* Project 3 */}
                 <a
                     href="https://fastq.oxoghost.dev/"
                     target="_blank"
@@ -147,7 +249,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 4 */}
                 <a
                     href="https://github.com/OxoGhost01/HexaPlayer"
                     target="_blank"
@@ -178,7 +279,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 5 */}
                 <a
                     href="https://github.com/OxoGhost01/HexaPic"
                     target="_blank"
@@ -209,7 +309,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 6 */}
                 <a
                     href="https://github.com/OxoGhost01/Hokito_python"
                     target="_blank"
@@ -236,7 +335,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 7 */}
                 <a
                     href="https://github.com/OxoGhost01/HexaMove"
                     target="_blank"
@@ -257,7 +355,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 8 */}
                 <a
                     href="https://github.com/OxoGhost01/Portfolio"
                     target="_blank"
@@ -284,7 +381,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 9 */}
                 <a
                     href="https://github.com/OxoGhost01/Clone_YTS_But_Strange"
                     target="_blank"
@@ -308,7 +404,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 10 */}
                 <a
                     href="https://github.com/OxoGhost01/Echoes-of-the-Cretan-Labyrinth"
                     target="_blank"
@@ -335,7 +430,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 11 */}
                 <a
                     href="https://github.com/OxoGhost01/Checkers-Game-in-Python"
                     target="_blank"
@@ -363,7 +457,6 @@ function ProjectsLoader() {
                 </a>
 
 
-                {/* Project 12 */}
                 <a
                     href="https://github.com/OxoGhost01/Tic-Tac-Toe-in-C"
                     target="_blank"
@@ -390,7 +483,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 13 */}
                 <a
                     href="https://github.com/OxoGhost01/Clash-Not-Royal"
                     target="_blank"
@@ -417,7 +509,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 14 */}
                 <a
                     href="https://github.com/OxoGhost01/double_chained_lists"
                     target="_blank"
@@ -445,7 +536,6 @@ function ProjectsLoader() {
                 </a>
 
 
-                {/* Project 15 */}
                 <a
                     href="https://github.com/OxoGhost01/Chess_in_python"
                     target="_blank"
@@ -472,7 +562,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 16 */}
                 <a
                     href="https://github.com/OxoGhost01/SpotiShit"
                     target="_blank"
@@ -502,7 +591,6 @@ function ProjectsLoader() {
                     </div>
                 </a>
 
-                {/* Project 17 */}
                 <a
                     href="https://github.com/OxoGhost01/troller_bot"
                     target="_blank"
