@@ -4,10 +4,7 @@ import {
     Cpu,
     TerminalSquare,
     FileCode,
-    Blocks,
     Globe,
-    Braces,
-    Boxes
 } from "lucide-react";
 
 
@@ -39,17 +36,17 @@ export default function About() {
                 <p className="text-sm md:text-base text-gray-200 leading-relaxed">
                     I'm a CS student focused on{" "}
                     <span className="font-semibold bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        systems programming
+                        kernel & OS development
                     </span>
                     ,{" "}
                     <span className="font-semibold bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        machine learning
+                        low-level programming
                     </span>
-                    , and building{" "}
+                    , and building things{" "}
                     <span className="font-semibold bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        small, efficient tools
+                        from scratch
                     </span>
-                    . I like understanding how things work under the hood, writing clean performant code, and experimenting with agents, simulations, and system behavior.
+                    . I like going as deep as possible, from assembly up to userspace, understanding exactly how things work and writing lean, correct systems.
                 </p>
             </div>
 
@@ -68,16 +65,13 @@ export default function About() {
                             to see how they work naturally led me to computer science.
                         </p>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                            At the moment, I'm studying CS in Paris and exploring the space
-                            between{" "}
+                            At the moment, I'm studying CS in Paris and building{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                machine learning
-                            </span>{" "}
-                            and{" "}
-                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                systems programming
+                                Kira Linux
                             </span>
-                            . I like projects where performance, correctness and experimentation all matter.
+                            , my own Linux distribution. Working through everything from the init system
+                            to userspace tooling, with a custom bootloader next on the list.
+                            I like projects where correctness, performance, and getting your hands dirty all matter.
                         </p>
                     </div>
 
@@ -88,14 +82,17 @@ export default function About() {
                             I'm particularly interested in:
                         </p>
                         <ul className="text-sm md:text-base text-gray-200 space-y-1.5 list-disc list-inside">
-                            <li>Designing{" "}
+                            <li>Building and experimenting with my own{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                RL agents
-                            </span>{" "}for control, driving or game environments</li>
-                            <li>Learning new ways of doing things, or new tools</li>
-                            <li>Understanding how systems behave under stress or constraints</li>
+                                Linux distribution
+                            </span>{" "}(Kira Linux)</li>
+                            <li>Writing{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                kernel-level code
+                            </span>{" "}(memory management, drivers, bootloaders)</li>
+                            <li>Understanding how the OS/hardware interface works at the assembly level</li>
                             <li>Automating repetitive tasks and building tools that solve real problems</li>
-                            <li>Learning how things works under the hood</li>
+                            <li>Learning new ways of doing things, digging into source code and specs</li>
                         </ul>
                     </div>
 
@@ -108,28 +105,28 @@ export default function About() {
                         <ul className="text-sm md:text-base text-gray-200 space-y-1.5 list-disc list-inside">
                             <li>Contribute to real projects in{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                software engineering
+                                kernel development
                             </span>{" "},{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                Reinforcement Learning
+                                systems engineering
                             </span>{" "}or{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                video game
-                            </span>{" "}development</li>
+                                embedded systems
+                            </span></li>
                             <li>Learn from more experienced engineers and strengthen my foundations</li>
-                            <li>Work on problems involving{" "}
+                            <li>Work on problems where{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 performance
-                            </span>{" "}, data or{" "}
+                            </span>{" "}and{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                complex systems
-                            </span>{" "}</li>
+                                correctness
+                            </span>{" "}are non-negotiable</li>
                         </ul>
                         <p className="text-sm md:text-base text-gray-200 leading-relaxed">
                             If you think my profile could match your team or project, feel free to{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 reach out
-                            </span>{" "}— I'm always open to learning and collaborating.
+                            </span>, I'm always open to learning and collaborating.
                         </p>
                     </div>
                 </div>
@@ -142,12 +139,11 @@ export default function About() {
                         <h3 className="font-semibold text-lg mb-2">Skills & tools</h3>
                         <div className="flex flex-wrap gap-2 text-xs text-gray-100">
                             <div className="flex flex-wrap gap-2 text-xs text-gray-100">
-                                <Skill icon={Cpu} name="Python" />
                                 <Skill icon={Code2} name="C" />
                                 <Skill icon={Code2} name="C++" />
-                                <Skill icon={Code2} name="C#" />
-                                <Skill icon={Braces} name="AngelScript" />
-                                <Skill icon={Blocks} name="GDScript" />
+                                <Skill icon={Cpu} name="x86/RISC-V Assembly" />
+                                <Skill icon={TerminalSquare} name="Shell/Bash" />
+                                <Skill icon={FileCode} name="Python" />
                                 <Skill icon={Globe} name="HTML/CSS" />
                                 <Skill icon={FileCode} name="JavaScript" />
                                 <Skill icon={FileCode} name="TypeScript" />

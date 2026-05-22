@@ -20,7 +20,7 @@ export default function Home() {
             {/* Name + Title */}
             <div className="flex flex-col space-y-1">
                 <h2 className="text-5xl font-bold">Arlen Ghost</h2>
-                <p className="text-2xl text-gray-300">CS Student & ML Enthusiast</p>
+                <p className="text-2xl text-gray-300">CS Student & Low-Level Enjoyer</p>
             </div>
 
             {/* Wider Buttons (single-line text + glow) */}
