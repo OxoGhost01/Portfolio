@@ -143,13 +143,6 @@ export default function Contact() {
                                 <FaGithub />
                             </a>
                             <a
-                                href="https://youtube.com/@OxoGhost01"
-                                target="_blank"
-                                className="hover:text-purple-300 transition"
-                            >
-                                <FaYoutube />
-                            </a>
-                            <a
                                 href="#"
                                 onClick={() => navigator.clipboard.writeText("arlen_ghost")}
                                 className="hover:text-purple-300 transition cursor-pointer"
@@ -158,10 +151,6 @@ export default function Contact() {
                                 <FaDiscord />
                             </a>
                         </div>
-
-                        <p className="text-sm text-gray-400 mt-3">
-                            (click the Discord icon to copy)
-                        </p>
                     </div>
                 </div>
             </div>

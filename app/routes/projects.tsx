@@ -51,7 +51,7 @@ function ProjectsLoader() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 animate-fadeIn">
 
                 <a
-                    href="https://github.com/shinigami-os/kira-base"
+                    href="https://kira-linux.com"
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
                 >
@@ -78,46 +78,6 @@ function ProjectsLoader() {
                             </span>
                             <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
                                 Makefile
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a
-                    href="https://github.com/shinigami-os/shinigami"
-                    target="_blank"
-                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
-                >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
-
-                    <div className="p-4 flex flex-col justify-center">
-                        <h3 className="font-semibold text-xl mb-1">Shinigami</h3>
-                        <p className="text-gray-300 text-sm mb-3">
-                            Kinux kernel fork powering Kira Linux.
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
-                                C
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a
-                    href="https://github.com/shinigami-os/flux"
-                    target="_blank"
-                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
-                >
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 bg-gradient-to-br from-purple-600/40 to-pink-600/40 border-r border-white/10 flex-shrink-0"></div>
-
-                    <div className="p-4 flex flex-col justify-center">
-                        <h3 className="font-semibold text-xl mb-1">flux</h3>
-                        <p className="text-gray-300 text-sm mb-3">
-                            Fast, minimal source-based pacjage manager for Kira Linux.
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
-                                C
                             </span>
                         </div>
                     </div>
@@ -325,7 +285,7 @@ function ProjectsLoader() {
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Hokito game in Python</h3>
                         <p className="text-gray-300 text-sm mb-3">
-                            A Hokito game made with pygame — solo or local multiplayer.
+                            A Hokito game made with pygame ! Solo or local multiplayer.
                         </p>
                         <div className="flex flex-wrap gap-2">
                             <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
@@ -552,7 +512,7 @@ function ProjectsLoader() {
                     <div className="p-4 flex flex-col justify-center">
                         <h3 className="font-semibold text-xl mb-1">Chess in Python</h3>
                         <p className="text-gray-300 text-sm mb-3">
-                            Unfinished chess game in pygame — too lazy to implement check logic 😄
+                            Unfinished chess game in pygame ; too lazy to implement check logic 😄
                         </p>
                         <div className="flex flex-wrap gap-2">
                             <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">

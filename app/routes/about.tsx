@@ -46,7 +46,7 @@ export default function About() {
                     <span className="font-semibold bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                         from scratch
                     </span>
-                    . I like going as deep as possible, from assembly up to userspace, understanding exactly how things work and writing lean, correct systems.
+                    . I'm especially drawn to the firmware/hardware handoff, writing bootloaders that take a machine from power-on to a running kernel with nothing there to begin with. I like going as deep as possible, from firmware up to userspace, understanding exactly how things work and writing lean, correct systems.
                 </p>
             </div>
 
@@ -69,8 +69,18 @@ export default function About() {
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 Kira Linux
                             </span>
-                            , my own Linux distribution. Working through everything from the init system
-                            to userspace tooling, with a custom bootloader next on the list.
+                            , a rolling-release, developer-oriented Linux distribution built from the ground up:{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                shinigami
+                            </span>
+                            , a minimally-patched kernel fork built with clang/LLVM and Thin LTO;{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                flux
+                            </span>
+                            , a package manager I wrote in C with signed binary
+                            caching; a musl/runit base system; and a SwayFX desktop. I've just started work on its
+                            bootloader: UEFI on x86_64 for now, writing the firmware-to-kernel handoff from scratch,
+                            with BIOS and RISC-V support planned if the project pans out.
                             I like projects where correctness, performance, and getting your hands dirty all matter.
                         </p>
                     </div>
@@ -85,11 +95,12 @@ export default function About() {
                             <li>Building and experimenting with my own{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 Linux distribution
-                            </span>{" "}(Kira Linux)</li>
+                            </span>{" "}(Kira Linux), from kernel to package manager, init and desktop</li>
                             <li>Writing{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                kernel-level code
-                            </span>{" "}(memory management, drivers, bootloaders)</li>
+                                bootloaders and firmware-level code
+                            </span>{" "}(the handoff from UEFI/BIOS to a running kernel), built from scratch</li>
+                            <li>Writing kernel-level code (memory management, drivers, schedulers)</li>
                             <li>Understanding how the OS/hardware interface works at the assembly level</li>
                             <li>Automating repetitive tasks and building tools that solve real problems</li>
                             <li>Learning new ways of doing things, digging into source code and specs</li>
@@ -106,6 +117,9 @@ export default function About() {
                             <li>Contribute to real projects in{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 kernel development
+                            </span>{" "},{" "}
+                            <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                bootloader/firmware engineering
                             </span>{" "},{" "}
                             <span className="font-medium bg-gradient-to-br from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 systems engineering
