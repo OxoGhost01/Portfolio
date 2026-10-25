@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 export default function Home() {
     useEffect(() => {
@@ -8,23 +9,23 @@ export default function Home() {
     const [showCVMenu, setShowCVMenu] = useState(false);
 
     return (
-        <section className="flex flex-col items-center text-center space-y-10 animate-fadeIn h-full justify-center">
+        <section className="flex flex-col items-center text-center gap-[clamp(1rem,4dvh,2.5rem)] animate-fadeIn min-h-full justify-center py-2">
 
             {/* Bigger Profile Picture */}
             <img
                 src="/profile.png"
                 alt="Profile"
-                className="w-80 h-80 rounded-full object-cover shadow-2xl border border-white/30"
+                className="size-[min(20rem,30dvh,65vw)] min-w-32 min-h-32 rounded-full object-cover shadow-2xl border border-white/30"
             />
 
             {/* Name + Title */}
             <div className="flex flex-col space-y-1">
-                <h2 className="text-5xl font-bold">Arlen Ghost</h2>
-                <p className="text-2xl text-gray-300">CS Student & Low-Level Enjoyer</p>
+                <h2 className="text-4xl sm:text-5xl font-bold">Arlen Ghost</h2>
+                <p className="text-xl sm:text-2xl text-gray-300">CS Student & Low-Level Enjoyer</p>
             </div>
 
             {/* Wider Buttons (single-line text + glow) */}
-            <div className="flex flex-col sm:flex-row gap-6 mt-6 w-full max-w-2xl"> 
+            <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full max-w-2xl">
                 <Link
                     to="/projects"
                     className="flex-1 
@@ -55,7 +56,7 @@ export default function Home() {
                     <button
                         onClick={() => setShowCVMenu((v) => !v)}
                         className="
-                        flex-1 
+                        w-full
                         bg-gradient-to-br from-purple-600/30 to-pink-600/30 
                         backdrop-blur-xl 
                         border border-white/20 
@@ -66,7 +67,7 @@ export default function Home() {
                     >
                         📄 Download CV
                     </button>
-                    {showCVMenu && (
+                    {showCVMenu && createPortal(
                     <div className="fixed inset-0 z-50 flex items-center justify-center">
                         <div
                         className="absolute inset-0 backdrop-blur-sm"
@@ -75,7 +76,7 @@ export default function Home() {
 
                         <div
                         className="
-                            relative z-10 w-80
+                            relative z-10 w-[min(20rem,calc(100vw-2rem))]
                             bg-black/70 backdrop-blur-xl
                             border border-white/20
                             rounded-2xl
@@ -131,7 +132,8 @@ export default function Home() {
                             Cancel
                         </button>
                         </div>
-                    </div>
+                    </div>,
+                    document.body
                     )}
                 </div>
             </div>

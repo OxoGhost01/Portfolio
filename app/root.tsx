@@ -148,30 +148,35 @@ return (
     <html lang="en" className="h-full">
     <head>
         <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/tab_icon.png" />
         <Meta />
         <Links />
     </head>
-    <body className="min-h-screen bg-[#0a0a0a] text-white flex flex-col items-center justify-center p-6">
+    <body className="min-h-dvh bg-[#0a0a0a] text-white flex flex-col items-center justify-center px-3 py-4 sm:p-6">
 
-        <Starfield />
-        <Nebula />
-        <ShootingStars />
+        {/* Background stays fixed to the viewport, even when the page scrolls */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+            <Starfield />
+            <Nebula />
+            <ShootingStars />
+        </div>
 
+        {/* Fixed height (with inner scrolling) on md+, natural height on mobile */}
         <div
-        className="glass-card w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-6 flex flex-col h-[750px] max-h-[850px]"
+        className="glass-card w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-4 sm:p-6 flex flex-col md:h-[clamp(480px,calc(100dvh-5rem),750px)]"
         >
         {/* Header */}
-        <header className="flex items-center justify-between mb-6 flex-shrink-0">
+        <header className="flex flex-col sm:flex-row items-center justify-between gap-3 mb-6 flex-shrink-0">
             <Link to="/" className="flex items-center gap-3">
             <img
                 src="/profile.png"
                 alt="Profile"
-                className="w-16 h-16 rounded-full bg-white/20 object-cover"
+                className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/20 object-cover"
             />
-            <h1 className="text-3xl font-semibold">Arlen Ghost</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-nowrap">Arlen Ghost</h1>
             </Link>
-            <nav className="flex gap-6 text-lg">
+            <nav className="flex flex-wrap justify-center gap-x-5 gap-y-1 sm:gap-6 text-base sm:text-lg">
             <Link to="/" className="hover:text-gray-300 transition">Home</Link>
             <Link to="/projects" className="hover:text-gray-300 transition">Projects</Link>
             <Link to="/about" className="hover:text-gray-300 transition">About</Link>
@@ -180,18 +185,19 @@ return (
         </header>
 
         {/* Main content area */}
-        <main className="flex-1 min-h-0 flex flex-col">
+        <main className="flex-1 min-h-0 flex flex-col md:overflow-y-auto">
             <Outlet />
         </main>
         </div>
-        <ScrollRestoration />
-        <Scripts />
-    </body>
-    <footer className="w-full text-center absolute bottom-2">
+
+        <footer className="relative w-full text-center mt-3">
             <p className="text-sm text-gray-400">
             &copy; 2025-{new Date().getFullYear()} <Link to="/">OxoGhost</Link>. All rights reserved.
             </p>
-    </footer>
+        </footer>
+        <ScrollRestoration />
+        <Scripts />
+    </body>
     </html>
 );
 }

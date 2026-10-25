@@ -29,7 +29,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="h-full flex flex-col animate-fadeIn">
+        <section className="min-h-full flex flex-col animate-fadeIn">
             <h2 className="text-3xl font-bold mb-6">Contact</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
