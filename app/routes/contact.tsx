@@ -112,8 +112,8 @@ export default function Contact() {
                     <h3 className="text-2xl font-semibold mb-4">Contact info</h3>
 
                     <p className="text-gray-200">
-                        <span className="font-semibold">Real name:</span>
-                        <br /> Timothée Gauchez
+                        <span className="font-semibold">Current location:</span>
+                        <br /> Paris, France
                     </p>
 
                     <p className="text-gray-200 mt-3">
