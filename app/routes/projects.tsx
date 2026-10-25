@@ -117,6 +117,39 @@ function ProjectsLoader() {
                 </a>
 
                 <a
+                    href="https://wordeule.oxoghost.dev/"
+                    target="_blank"
+                    className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
+                >
+                    {/* LEFT SQUARE */}
+                    <div className="relative w-32 h-32 sm:w-36 sm:h-36 border-r border-white/10 flex-shrink-0 overflow-hidden rounded-xl">
+                        <img
+                            src="/projects/WORDEULE.png"
+                            alt="WORDEULE"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+
+                    {/* RIGHT CONTENT */}
+                    <div className="p-4 flex flex-col justify-center items-start">
+                        <h3 className="font-semibold text-xl mb-1">WORDEULE</h3>
+                        <p className="text-gray-300 text-sm mb-3">
+                            Wordle, except it's WORDEULE. (way better)
+                        </p>
+
+                        {/* TAG */}
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                React
+                            </span>
+                            <span className="px-3 py-1 rounded-full text-sm bg-gradient-to-br from-purple-600/30 to-pink-600/30 border border-white/10 shadow-[0_0_10px_rgba(255,0,255,0.25)]">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a
                     href="https://github.com/OxoGhost01/TrackmanAI"
                     target="_blank"
                     className="group bg-white/10 backdrop-blur rounded-xl border border-white/20 hover:bg-white/20 transition cursor-pointer flex overflow-hidden"
