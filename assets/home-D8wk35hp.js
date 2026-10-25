@@ -1,4 +1,4 @@
-import{w as s,a as o,p as e,q as n}from"./chunk-FGUA77HG-DLcrTHtq.js";const i=s(function(){o.useEffect(()=>{document.title="Home - OxoGhost"},[]);const[t,r]=o.useState(!1);return e.jsxs("section",{className:"flex flex-col items-center text-center space-y-10 animate-fadeIn h-full justify-center",children:[e.jsx("img",{src:"/profile.png",alt:"Profile",className:"w-80 h-80 rounded-full object-cover shadow-2xl border border-white/30"}),e.jsxs("div",{className:"flex flex-col space-y-1",children:[e.jsx("h2",{className:"text-5xl font-bold",children:"Arlen Ghost"}),e.jsx("p",{className:"text-2xl text-gray-300",children:"CS Student & Low-Level Enjoyer"})]}),e.jsxs("div",{className:"flex flex-col sm:flex-row gap-6 mt-6 w-full max-w-2xl",children:[e.jsx(n,{to:"/projects",className:`flex-1 
+import{w as s,a as o,p as e,q as n}from"./chunk-FGUA77HG-DLcrTHtq.js";import{a}from"./index-WVw_IZVL.js";const p=s(function(){o.useEffect(()=>{document.title="Home - OxoGhost"},[]);const[t,r]=o.useState(!1);return e.jsxs("section",{className:"flex flex-col items-center text-center gap-[clamp(1rem,4dvh,2.5rem)] animate-fadeIn min-h-full justify-center py-2",children:[e.jsx("img",{src:"/profile.png",alt:"Profile",className:"size-[min(20rem,30dvh,65vw)] min-w-32 min-h-32 rounded-full object-cover shadow-2xl border border-white/30"}),e.jsxs("div",{className:"flex flex-col space-y-1",children:[e.jsx("h2",{className:"text-4xl sm:text-5xl font-bold",children:"Arlen Ghost"}),e.jsx("p",{className:"text-xl sm:text-2xl text-gray-300",children:"CS Student & Low-Level Enjoyer"})]}),e.jsxs("div",{className:"flex flex-col md:flex-row gap-4 md:gap-6 w-full max-w-2xl",children:[e.jsx(n,{to:"/projects",className:`flex-1 
                         bg-gradient-to-br from-purple-600/30 to-pink-600/30 
                         backdrop-blur-xl 
                         border border-white/20 
@@ -11,15 +11,15 @@ import{w as s,a as o,p as e,q as n}from"./chunk-FGUA77HG-DLcrTHtq.js";const i=s(
                         py-3 px-6 rounded-xl text-xl font-medium text-nowrap
                         hover:from-purple-500/50 hover:to-pink-500/50 
                         transition shadow-[0_0_20px_rgba(255,0,255,0.2)] hover:shadow-[0_0_25px_rgba(255,0,255,0.4)]`,children:"👤 More About Me"}),e.jsxs("div",{className:"relative flex-1",children:[e.jsx("button",{onClick:()=>r(l=>!l),className:`
-                        flex-1 
+                        w-full
                         bg-gradient-to-br from-purple-600/30 to-pink-600/30 
                         backdrop-blur-xl 
                         border border-white/20 
                         py-3 px-6 rounded-xl text-xl font-medium text-nowrap
                         hover:from-purple-500/50 hover:to-pink-500/50 
                         transition shadow-[0_0_20px_rgba(255,0,255,0.2)] hover:shadow-[0_0_25px_rgba(255,0,255,0.4)]
-                        `,children:"📄 Download CV"}),t&&e.jsxs("div",{className:"fixed inset-0 z-50 flex items-center justify-center",children:[e.jsx("div",{className:"absolute inset-0 backdrop-blur-sm",onClick:()=>r(!1)}),e.jsxs("div",{className:`
-                            relative z-10 w-80
+                        `,children:"📄 Download CV"}),t&&a.createPortal(e.jsxs("div",{className:"fixed inset-0 z-50 flex items-center justify-center",children:[e.jsx("div",{className:"absolute inset-0 backdrop-blur-sm",onClick:()=>r(!1)}),e.jsxs("div",{className:`
+                            relative z-10 w-[min(20rem,calc(100vw-2rem))]
                             bg-black/70 backdrop-blur-xl
                             border border-white/20
                             rounded-2xl
@@ -40,4 +40,4 @@ import{w as s,a as o,p as e,q as n}from"./chunk-FGUA77HG-DLcrTHtq.js";const i=s(
                                 border border-white/20
                                 hover:from-purple-500/40 hover:to-pink-500/40
                                 transition
-                            `,children:"🇫🇷 Français"})]}),e.jsx("button",{onClick:()=>r(!1),className:"mt-6 text-sm text-gray-400 hover:text-white transition",children:"Cancel"})]})]})]})]})]})});export{i as default};
+                            `,children:"🇫🇷 Français"})]}),e.jsx("button",{onClick:()=>r(!1),className:"mt-6 text-sm text-gray-400 hover:text-white transition",children:"Cancel"})]})]}),document.body)]})]})]})});export{p as default};
